@@ -1,14 +1,14 @@
 interface ButtonProps{
   description: string,
-  action?: () => {}
+  url?: string
 }
 
 const Button: React.FC<ButtonProps> = ({
-  description, action
+  description, url
 }) => {
   return (
-    <div onClick={action} className="border-2 rounded border-transparent w-2/12 h-8 text-center cursor-pointer bg-green-300 hover:bg-emerald-300 text-xl">
-      {description}
+    <div className="border rounded border-emerald-500 h-8 text-center cursor-pointer bg-green-300 hover:bg-emerald-300 text-2xl text-black font-medium w-3/6">
+      {url ? <a href={url} download="CV_FRANCO_NICOLAS_SILVESTRO.pdf">{description}</a> : description}
     </div>
   )
 }

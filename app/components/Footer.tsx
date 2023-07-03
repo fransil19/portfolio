@@ -7,12 +7,12 @@ const socialLinks = [
 	{
 		id: 1,
 		icon: <FiGithub />,
-		url: 'https://github.com/realstoman',
+		url: 'https://github.com/fransil19',
 	},
 	{
 		id: 2,
 		icon: <FiLinkedin />,
-		url: 'https://www.linkedin.com/in/realstoman',
+		url: 'https://www.linkedin.com/in/franco-nicolas-silvestro/',
 	},
 ];
 

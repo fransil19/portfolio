@@ -25,7 +25,11 @@ const data = [
   },
 ]
 
-const ProjectsClient = () => {
+interface ProjectsClientProps{
+  id: string
+}
+
+const ProjectsClient: React.FC<ProjectsClientProps> = ({id}) => {
 
   //const [filteredProjects, setFilteredProjects] = useState([])
   const [inputValue, setInputValue] = useState('')
@@ -33,7 +37,7 @@ const ProjectsClient = () => {
   const filteredProjects = inputValue !== '' ? data.filter(project => project.title.toLowerCase().includes(inputValue.toLowerCase())) : data;
 
   return (
-    <section className="py-5 sm:py-10 mt-5 sm:mt-10 w-4/5">
+    <section id={id} className="py-5 sm:py-10 mt-5 sm:mt-10 w-4/5">
 			<div className="text-center">
 				<p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
 					Projects portfolio
@@ -67,7 +71,7 @@ const ProjectsClient = () => {
 							className="
                                 hidden
                                 sm:block
-                                bg-primary-light
+                                bg-neutral-100
                                 dark:bg-ternary-dark
                                 p-2.5
                                 shadow-sm
