@@ -3,9 +3,9 @@ import ProjectsClient from '../components/projects/ProjectsClient'
 
 const page = () => {
   return (
-    <div className="container mx-auto">
+    <div id="projects" className="container mx-auto">
       <div className="flex flex-col items-center">
-        <ProjectsClient id="projects"/>
+        <ProjectsClient id='hola'/>
       </div>
     </div>
   )

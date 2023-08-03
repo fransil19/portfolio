@@ -39,7 +39,7 @@ const ProjectsClient: React.FC<ProjectsClientProps> = ({id}) => {
   return (
     <section id={id} className="py-5 sm:py-10 mt-5 sm:mt-10 w-4/5">
 			<div className="text-center">
-				<p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
+				<p className="font-general-medium text-3xl sm:text-4xl mb-1 text-ternary-dark dark:text-gray-300">
 					Projects portfolio
 				</p>
 			</div>
@@ -48,8 +48,8 @@ const ProjectsClient: React.FC<ProjectsClientProps> = ({id}) => {
 				<h3
 					className="font-general-regular 
                         text-center text-secondary-dark
-                        dark:text-ternary-light
-                        text-md
+                        dark:text-gray-300
+                        text-lg
                         sm:text-xl
                         mb-3
                         "

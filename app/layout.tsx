@@ -3,8 +3,9 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import "./globals.css";
 import { Advent_Pro } from "next/font/google";
+import { MyThemeContextProvider } from "./context/Context";
 
-const advent = Advent_Pro({subsets: ["latin"]})
+const advent = Advent_Pro({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Franco Silvestro Portfolio",
@@ -17,14 +18,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className=" scroll-smooth">
-      <body className={"bg-emerald-200 " + advent.className}>
-        <ClientOnly>
-          <Navbar />
-        </ClientOnly>
-        <div>{children}</div>
-        <Footer />
-      </body>
+    <html lang="en" className={` scroll-smooth`}>
+      <MyThemeContextProvider>
+        <body className={"bg-gradient-to-b from-emerald-200 to-transparent dark:from-slate-700 dark:bg-slate-700 dark:fill-transparent " + advent.className}>
+          <ClientOnly>
+            <Navbar />
+          </ClientOnly>
+          <div className="relative">{children}</div>
+          <Footer />
+        </body>
+        </MyThemeContextProvider>
     </html>
   );
 }
