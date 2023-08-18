@@ -20,7 +20,7 @@ const About = () => {
           About me
         </h3>
         <div className="flex flex-col items-center md:flex-row gap-4 mb-10">
-          <div className="w-3/6 h-64 md:w-2/4 lg:w-2/6 relative ">
+          <div className="w-3/6 h-64 md:w-2/4 lg:w-2/6 xl:w-3/12 relative ">
             <Image
               src="/profilepic.jpg"
               alt="profile picture"
