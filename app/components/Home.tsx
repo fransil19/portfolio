@@ -3,6 +3,7 @@ import ProjectsClient from "./projects/ProjectsClient";
 import ProjectCard from "./projects/ProjectCard";
 import Button from "./Button";
 import ContactForm from "./contact/ContactForm";
+import About from "./about/About";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         </section>
         <Button description="Download My CV" url="/CV Franco Nicolas Silvestro.pdf"/>
         <ProjectsClient id="projects"/>
+        <About />
         <ContactForm />
       </div>
     </div>

@@ -7,21 +7,24 @@ import { useState } from "react";
 const data = [
   {
     id: 1,
-    image:"https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title:"Project test1",
-    category:"No se"
+    image:"/pokepi.png",
+    title:"Pokepi",
+    category:"Pokedex made with React, Redux, PostgreSQL, Node.js and Express.",
+    url: "https://pi-pokemon-silvestro.vercel.app/"
   },
   {
     id: 2,
-    image:"https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title:"Project test2",
-    category:"No se"
+    image:"/rentClone.png",
+    title:"Airbnb rental clone",
+    category:"Rental clone made with Next.js, Mongodb, Prisma, Tailwind and Next Auth.",
+    url: "https://rent-clone-practice.vercel.app/"
   },
   {
     id: 3,
     image:"https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title:"Project test3",
-    category:"No se"
+    title:"Groove Tickets - soon",
+    category:"Ecommerce app to buy tickets for concerts made with React, Redux, PostgreSql, Node.Js, Express, MercadoPago and Firebase.",
+    url: ""
   },
 ]
 
@@ -120,6 +123,7 @@ const ProjectsClient: React.FC<ProjectsClientProps> = ({id}) => {
               image={project.image}
               title={project.title}
               category={project.category}
+              url={project.url}
               key={project.id}
             />
           )

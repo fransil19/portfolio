@@ -9,7 +9,7 @@ const Button: React.FC<ButtonProps> = ({ description, url }) => {
       className="
       border 
       rounded 
-      border-emerald-500 
+      border-green-300 
       h-8 text-center 
       cursor-pointer 
       bg-green-300 
