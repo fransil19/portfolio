@@ -24,10 +24,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <Image src={image} alt="project image" className="rounded-t-xl border-none" fill/>
 					</div>
 					<div className="rounded-b-xl text-center px-4 py-6 bg-white border-t-2 border-t-slate-300">
-						<p className="font-general-medium font-bold text-xl md:text-xl text-ternary-dark dark:text-ternary-light mb-2">
+						<p className="font-general-medium font-bold text-xl md:text-xl text-black dark:text-ternary-light mb-2">
 							{title}
 						</p>
-						<span className="text-lg text-ternary-dark dark:text-ternary-light">
+						<span className="text-lg text-black dark:text-ternary-light">
 							{category}
 						</span>
 					</div>

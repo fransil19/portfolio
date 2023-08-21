@@ -16,7 +16,7 @@ const About = () => {
   return (
     <section className="py-5 sm:py-10 mt-5 sm:mt-10 w-4/5" id="about">
       <div className="text-center">
-        <h3 className="font-general-medium text-3xl sm:text-4xl mb-5 text-ternary-dark dark:text-gray-300">
+        <h3 className="font-general-medium text-3xl sm:text-4xl mb-5 text-black dark:text-gray-300">
           About me
         </h3>
         <div className="flex flex-col items-center md:flex-row gap-4 mb-10">
@@ -28,7 +28,7 @@ const About = () => {
               className="rounded-full border-none"
             />
           </div>
-          <p className="font-general-medium text-xl sm:text-2xl mb-1 text-ternary-dark dark:text-gray-300 md:w-full text-left">
+          <p className="font-general-medium text-xl sm:text-2xl mb-1 text-black dark:text-gray-300 md:w-full text-left">
             I&apos;m from Lomas de Zamora, Buenos Aires, Argentina.
             <br />
             I&apos;ve 29 years old, and i currently working as a QA Manual &
@@ -42,7 +42,7 @@ const About = () => {
           </p>
         </div>
         <div className="flex flex-col items-center gap-4">
-          <h3 className="font-general-medium text-2xl sm:text-3xl mb-1 text-ternary-dark dark:text-gray-300 md:w-full">
+          <h3 className="font-general-medium text-2xl sm:text-3xl mb-1 text-black dark:text-gray-300 md:w-full">
             My stack
           </h3>
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-10 gap-8 lg:gap-4 sm:gap-6">
